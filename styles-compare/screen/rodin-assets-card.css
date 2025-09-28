@@ -1,0 +1,35 @@
+.rodin-assets-card-tools {
+    @apply right-[12px] top-[12px] sm:right-[12px] sm:top-[12px] md:right-[13px] md:top-[13px] xl:right-[12px] xl:top-[12px];
+}
+
+.rodin-assets-card-avatar {
+    @apply aspect-square h-auto w-[20px] xs:w-[40px] sm:w-[30px] md:w-[28px] lg:w-[32px] xl:w-[32px] 2xl:w-[32px];
+}
+
+.rodin-assets-card-avatar-font {
+    @apply text-[12px] xs:text-[16px] sm:text-[16px] md:text-[14px] lg:text-[15px] xl:text-[14px] 2xl:text-[16px];
+}
+
+.rodin-assets-card-avatar-padding {
+    @apply pb-[12px] pl-[12px] pr-[31px] sm:pb-[12px] sm:pl-[12px] sm:pr-[28px] md:pb-[12px] md:pl-[12px] md:pr-[26px] xl:pr-[20px] 2xl:pb-[13px] 2xl:pl-[13px] 2xl:pr-[26px];
+}
+
+.rodin-assets-padding {
+    @apply px-[9px] py-[16px] sm:px-[2px] md:px-[10px] lg:px-[10px] xl:px-[40px] 2xl:px-[27px] 3xl:px-[6px];
+}
+
+.rodin-asset-menu {
+    @apply rounded-2xl px-4 py-2 text-sm leading-sm md:px-5 md:py-[10px] md:text-md md:leading-md;
+}
+
+.rodin-gallry-width {
+    @apply w-full sm:w-[calc(90vw-316px)] xl:w-[calc(90vw-346px)] 2xl:w-[1834px] 3xl:w-[2134px];
+}
+
+.rodin-3dcard-size {
+    @apply relative w-[28vw] min-w-[180px] sm:w-[calc((90vw-316px)/3-16px)] md:w-[calc((90vw-316px)/4-16px)] xl:w-[calc((90vw-346px)/5-28px)] 2xl:w-[284px] 3xl:w-[341px];
+}
+
+.rodin-gallery-layout {
+    @apply flex flex-wrap content-start justify-center gap-4;
+}
