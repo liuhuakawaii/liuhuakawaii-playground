@@ -3,9 +3,13 @@
  * 预定义的组件样式类
  */
 
-@tailwind components;
 
 @layer components {
+
+  .bg-white-glass{
+    @apply bg-[rgba(247,247,247,0.87)] backdrop-blur-sm;
+  }
+
   /* 卡片组件样式 */
   .card {
     @apply bg-white rounded-xl shadow-soft border border-gray-100 p-6 transition-shadow;

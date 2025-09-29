@@ -5,19 +5,19 @@
 
 /* 基础样式 */
 @import './base.css';
-
 /* 主题系统 */
 @import './theme.css';
-
 /* 组件样式 */
 @import './components.css';
-
 /* 工具类样式 */
-@tailwind utilities;
 @import './utilities/transitions.css';
 @import './utilities/animations.css';
 @import './utilities/responsive.css';
 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* 工具层样式 */
 @layer utilities {
   /* 渐变背景 */
@@ -96,23 +96,15 @@
     -ms-user-select: none;
   }
 
-  /* 滚动条样式 */
-  .scrollbar-thin::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-  }
+ /* 隐藏所有滚动条，但仍能滚动 */
 
-  .scrollbar-thin::-webkit-scrollbar-track {
-    background: transparent;
-  }
+*::-webkit-scrollbar {
+  display: none; /* Chrome、Safari 和 Opera */
+}
+*::-webkit-scrollbar-corner {
+    display: none;
+}
 
-  .scrollbar-thin::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 rounded-full;
-  }
-
-  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400;
-  }
 
   /* 居中工具类 */
   .center {

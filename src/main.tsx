@@ -3,19 +3,18 @@
  * 配置全局提供者和错误边界
  */
 
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
 import App from './App.tsx'
-import ErrorBoundary from './components/ErrorBoundary'
+import { AppProviders } from './components'
 import './styles/index.css'
 
+// 方案一：最简洁的配置
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ErrorBoundary>
+    <AppProviders>
+      <App />
+    </AppProviders>
   </React.StrictMode>,
 )
